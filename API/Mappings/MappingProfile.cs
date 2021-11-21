@@ -29,6 +29,7 @@ namespace API.Mappings
             CreateMap<FoodDto, Food>();
             CreateMap<FoodModelDto, Food>();
             CreateMap<Food, FoodModelDto>();
+            CreateMap<CreateFoodDto, Food>();
 
         }
     }

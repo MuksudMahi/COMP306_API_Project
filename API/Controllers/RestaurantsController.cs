@@ -106,10 +106,5 @@ namespace API.Controllers
 
             return NoContent();
         }
-
-        private bool RestaurantExists(int id)
-        {
-            return _context.Restaurants.Any(e => e.RestaurantId == id);
-        }
     }
 }

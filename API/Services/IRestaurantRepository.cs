@@ -13,13 +13,16 @@ namespace API.Services
         Task<Restaurant> GetRestaurantById(int restaurantId, bool includeFoods);
         Task<IEnumerable<Food>> GetFoodsForRestaurant(int RestaurantId);
         Task<Food> GetFoodForRestaurant(int RestaurantId, int FoodId);
-        Task<IEnumerable<Food>> AddFoodForRestaurant(int restaurantId, Food food);
+        Task<IEnumerable<Food>> AddFoodForRestaurant(Food food);
         Task<IEnumerable<Restaurant>> SaveRestaurant(Restaurant restaurant);
 
         Task DeleteRestaurant(Restaurant restaurant);
         Task UpdateRestaurant(Restaurant restaurant);
         Task<IEnumerable<Food>> GetFoods();
-        Task<string> DeleteFood(Food food);
+        Task<string> DeleteFood(int foodId);
+        Task<Food> GetFoodById(int foodId, bool includeRestaurant);
+        Task UpdateFood(Food food);
+        Task<bool> FoodExists(int foodId);
 
     }
 }

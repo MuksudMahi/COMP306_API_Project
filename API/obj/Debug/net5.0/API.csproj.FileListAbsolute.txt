@@ -8,6 +8,8 @@ C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\API.dll
 C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\ref\API.dll
 C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\API.pdb
 C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\Amazon.Extensions.Configuration.SystemsManager.dll
+C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\AWSSDK.AppConfig.dll
 C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\AWSSDK.Core.dll
 C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\AWSSDK.Extensions.NETCore.Setup.dll
@@ -122,6 +124,9 @@ C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0
 C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\TRFLibrary.dll
+C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\TRFLibrary.pdb
+C:\Users\mahi9\source\repos\TRF\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
 C:\Users\mahi9\source\repos\TRF\API\obj\Debug\net5.0\API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mahi9\source\repos\TRF\API\obj\Debug\net5.0\API.AssemblyInfoInputs.cache
 C:\Users\mahi9\source\repos\TRF\API\obj\Debug\net5.0\API.AssemblyInfo.cs
@@ -137,8 +142,3 @@ C:\Users\mahi9\source\repos\TRF\API\obj\Debug\net5.0\API.dll
 C:\Users\mahi9\source\repos\TRF\API\obj\Debug\net5.0\ref\API.dll
 C:\Users\mahi9\source\repos\TRF\API\obj\Debug\net5.0\API.pdb
 C:\Users\mahi9\source\repos\TRF\API\obj\Debug\net5.0\API.genruntimeconfig.cache
-C:\Users\mahi9\source\repos\TRF\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
-C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\TRFLibrary.dll
-C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\TRFLibrary.pdb
-C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\AutoMapper.dll
-C:\Users\mahi9\source\repos\TRF\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

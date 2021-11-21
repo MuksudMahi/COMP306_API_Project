@@ -38,79 +38,67 @@ namespace API.Controllers
 
         // GET: api/Foods/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Food>> GetFood(int id)
+        public async Task<ActionResult<Food>> GetFood(int id, bool includeRestaurant=false)
         {
-            var food = await _context.Foods.FindAsync(id);
+            var food = await _contextRepo.GetFoodById(id, includeRestaurant);
 
             if (food == null)
             {
                 return NotFound();
             }
 
-            return food;
+            if (includeRestaurant)
+            {
+                var foodsRestaurant = _mapper.Map<FoodModelDto>(food);
+                return Ok(foodsRestaurant);
+            }
+
+            var foodWithoutRestaurant = _mapper.Map<FoodDto>(food);
+            return Ok(foodWithoutRestaurant);
         }
 
         // PUT: api/Foods/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutFood(int id, Food food)
+        public async Task<IActionResult> PutFood(int id, FoodDto food)
         {
-            if (id != food.FoodId)
-            {
-                return BadRequest();
-            }
+            var foodToUpdate = _mapper.Map<Food>(food);
 
-            _context.Entry(food).State = EntityState.Modified;
 
-            try
+            if (!_contextRepo.FoodExists(foodToUpdate.FoodId).Result)
             {
-                await _context.SaveChangesAsync();
+                return NotFound();
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!FoodExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            foodToUpdate.RestaurantId = id;
+            await _contextRepo.UpdateFood(foodToUpdate);
             return NoContent();
         }
 
         // POST: api/Foods
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Food>> PostFood(Food food)
+        public async Task<ActionResult<Food>> PostFood(CreateFoodDto food)
         {
-            _context.Foods.Add(food);
-            await _context.SaveChangesAsync();
+            var foodToAdd = _mapper.Map<Food>(food);
+            await _contextRepo.AddFoodForRestaurant(foodToAdd);
 
-            return CreatedAtAction("GetFood", new { id = food.FoodId }, food);
+            return Ok();
+            //return CreatedAtAction("GetFood", new { id = food.FoodId }, food);
         }
 
         // DELETE: api/Foods/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteFood(int id)
         {
-            var food = await _context.Foods.FindAsync(id);
-            if (food == null)
+            if (! _contextRepo.FoodExists(id).Result)
             {
                 return NotFound();
             }
 
-            _context.Foods.Remove(food);
-            await _context.SaveChangesAsync();
+            await _contextRepo.DeleteFood(id);
+            //await _context.SaveChangesAsync();
 
             return NoContent();
-        }
-
-        private bool FoodExists(int id)
-        {
-            return _context.Foods.Any(e => e.FoodId == id);
         }
     }
 }
