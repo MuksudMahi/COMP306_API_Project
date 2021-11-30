@@ -29,11 +29,21 @@ namespace API.Controllers
 
         // GET: api/Foods
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Food>>> GetFoods()
+        public async Task<ActionResult<IEnumerable<Food>>> GetFoods(int? id)
         {
-            var foods = await _contextRepo.GetFoods();
-            var results = _mapper.Map<IEnumerable<FoodModelDto>>(foods);
-            return Ok(results);
+
+            if (!id.HasValue)
+            {
+                var foods = await _contextRepo.GetFoods();
+                var results = _mapper.Map<IEnumerable<FoodModelDto>>(foods);
+                return Ok(results);
+            }
+            else
+            {
+                var restaurantFoods = await _contextRepo.GetFoodsForRestaurant(id);
+                var results = _mapper.Map<IEnumerable<FoodDto>>(restaurantFoods);
+                return Ok(results);
+            }
         }
 
         // GET: api/Foods/5

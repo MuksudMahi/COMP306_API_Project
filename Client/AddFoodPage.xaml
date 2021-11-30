@@ -1,0 +1,86 @@
+﻿<Page x:Class="Client.AddFoodPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Client"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddFoodPage">
+
+    <Grid>
+        <Label 
+            Content="Food Name"
+            HorizontalAlignment="Left"
+            Margin="219,112,0,0"
+            VerticalAlignment="Top"/>
+        <TextBox 
+            x:Name="tbFoodName"
+            HorizontalAlignment="Left" 
+            Margin="360,107,0,0"
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"
+            Width="277" Height="35"/>
+        <Label 
+            Content="Description" 
+            HorizontalAlignment="Left"
+            Margin="219,176,0,0"
+            VerticalAlignment="Top"/>
+        <TextBox
+            x:Name="tbDescription"
+            HorizontalAlignment="Left"
+            Margin="360,171,0,0" 
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="277" Height="35"/>
+        <TextBlock 
+            HorizontalAlignment="Left"
+            Margin="219,29,0,0"
+            Text="Add Food" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"/>
+        <Button
+            x:Name="btnAdd"
+            Content="Add"
+            HorizontalAlignment="Left" 
+            Margin="519,278,0,0"
+            VerticalAlignment="Top"
+            RenderTransformOrigin="0.543,-0.762"
+            Height="39" Width="118" Click="btnAdd_Click"/>
+        <TextBox
+            x:Name="tbPrice"
+            HorizontalAlignment="Left"
+            Margin="360,225,0,0" 
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="277" Height="35"/>
+        <Label 
+            Content="Price" 
+            HorizontalAlignment="Left"
+            Margin="219,230,0,0"
+            VerticalAlignment="Top"/>
+        <TextBlock 
+            x:Name="tbMessage"
+            HorizontalAlignment="Left" 
+            Margin="509,322,0,0"
+            TextWrapping="Wrap" 
+             VerticalAlignment="Top" Height="39" RenderTransformOrigin="0.5,0.5" Width="128">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Button
+            x:Name="btnCancel"
+            Content="Cancel"
+            HorizontalAlignment="Left" 
+            Margin="396,278,0,0"
+            VerticalAlignment="Top"
+            RenderTransformOrigin="0.543,-0.762"
+            Height="39" Width="118" Click="btnCancel_Click"/>
+    </Grid>
+</Page>
