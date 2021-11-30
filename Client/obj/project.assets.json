@@ -5518,11 +5518,18 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\mahi9\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\sathi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+>>>>>>> 5a53a0e0a3361eae6fee360d4d4e0c932d284c2a
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\mahi9\\source\\repos\\TRF\\Client\\Client.csproj",
       "projectName": "Client",
       "projectPath": "C:\\Users\\mahi9\\source\\repos\\TRF\\Client\\Client.csproj",
@@ -5531,6 +5538,21 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mahi9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "D:\\TRF\\Client\\Client.csproj",
+      "projectName": "Client",
+      "projectPath": "D:\\TRF\\Client\\Client.csproj",
+      "packagesPath": "C:\\Users\\sathi\\.nuget\\packages\\",
+      "outputPath": "D:\\TRF\\Client\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\sathi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 5a53a0e0a3361eae6fee360d4d4e0c932d284c2a
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5591,7 +5613,11 @@
             "privateAssets": "none"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.209\\RuntimeIdentifierGraph.json"
+>>>>>>> 5a53a0e0a3361eae6fee360d4d4e0c932d284c2a
       }
     }
   },

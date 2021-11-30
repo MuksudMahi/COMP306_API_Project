@@ -95,13 +95,21 @@ namespace Client {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+<<<<<<< HEAD
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.9.0")]
+=======
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.12.0")]
+>>>>>>> 5a53a0e0a3361eae6fee360d4d4e0c932d284c2a
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
             }
             _contentLoaded = true;
+<<<<<<< HEAD
             System.Uri resourceLocater = new System.Uri("/Client;component/addfoodpage.xaml", System.UriKind.Relative);
+=======
+            System.Uri resourceLocater = new System.Uri("/Client;V1.0.0.0;component/addfoodpage.xaml", System.UriKind.Relative);
+>>>>>>> 5a53a0e0a3361eae6fee360d4d4e0c932d284c2a
             
             #line 1 "..\..\..\AddFoodPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -111,7 +119,11 @@ namespace Client {
         }
         
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+<<<<<<< HEAD
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.9.0")]
+=======
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.12.0")]
+>>>>>>> 5a53a0e0a3361eae6fee360d4d4e0c932d284c2a
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]

@@ -85,7 +85,11 @@ namespace Client {
                 return;
             }
             _contentLoaded = true;
+<<<<<<< HEAD
             System.Uri resourceLocater = new System.Uri("/Client;V1.0.0.0;component/updaterestaurantpage.xaml", System.UriKind.Relative);
+=======
+            System.Uri resourceLocater = new System.Uri("/Client;component/updaterestaurantpage.xaml", System.UriKind.Relative);
+>>>>>>> 5a53a0e0a3361eae6fee360d4d4e0c932d284c2a
             
             #line 1 "..\..\..\UpdateRestaurantPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
