@@ -4,7 +4,6 @@ C:\Users\mahi9\source\repos\TRF\TRFLibrary\bin\Debug\net5.0\TRFLibrary.runtimeco
 C:\Users\mahi9\source\repos\TRF\TRFLibrary\bin\Debug\net5.0\TRFLibrary.dll
 C:\Users\mahi9\source\repos\TRF\TRFLibrary\bin\Debug\net5.0\ref\TRFLibrary.dll
 C:\Users\mahi9\source\repos\TRF\TRFLibrary\bin\Debug\net5.0\TRFLibrary.pdb
-C:\Users\mahi9\source\repos\TRF\TRFLibrary\obj\Debug\net5.0\TRFLibrary.csproj.AssemblyReference.cache
 C:\Users\mahi9\source\repos\TRF\TRFLibrary\obj\Debug\net5.0\TRFLibrary.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mahi9\source\repos\TRF\TRFLibrary\obj\Debug\net5.0\TRFLibrary.AssemblyInfoInputs.cache
 C:\Users\mahi9\source\repos\TRF\TRFLibrary\obj\Debug\net5.0\TRFLibrary.AssemblyInfo.cs

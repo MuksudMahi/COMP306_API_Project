@@ -26,3 +26,6 @@ INSERT INTO [Food] VALUES (1001, 'Taco', 'Some Description', 10.00);
 
 select * from [Restaurant];
 select * from [Food];
+
+Drop table [Restaurant];
+drop table [food]

@@ -1,0 +1,49 @@
+﻿<Page x:Class="Client.RestaurantMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Client"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RestaurantMenu">
+
+    <Grid>
+        <DataGrid
+            x:Name="dgRestaurants"
+            Margin="0,72,202,0"
+            IsReadOnly="True"/>
+        <Button
+            x:Name="btnUpdateFoods"
+            Content="Update" 
+            HorizontalAlignment="Left" 
+            Margin="0,5,0,0"
+            VerticalAlignment="Top"
+            Height="49" 
+            Width="193" Click="btnUpdateFoods_Click"/>
+        <Button
+            x:Name="btnAdd"
+            Content="Add" 
+            HorizontalAlignment="Left" 
+            Margin="207,5,0,0"
+            VerticalAlignment="Top"
+            Height="49" 
+            Width="193" Click="btnAdd_Click"/>
+        <Button
+            x:Name="btnBack"
+            Content="Back" 
+            HorizontalAlignment="Left" 
+            Margin="597,332,0,0"
+            VerticalAlignment="Top"
+            Height="49" 
+            Width="193" Click="btnBack_Click"/>
+        <Button
+            x:Name="btnDelete"
+            Content="Delete" 
+            HorizontalAlignment="Left" 
+            Margin="405,5,0,0"
+            VerticalAlignment="Top"
+            Height="49" 
+            Width="193" Click="btnDelete_Click"/>
+    </Grid>
+</Page>

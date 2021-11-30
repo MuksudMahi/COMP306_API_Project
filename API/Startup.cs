@@ -44,6 +44,8 @@ namespace API
             builder.Password = Configuration["DbPassword"];
             var connection = builder.ConnectionString;
             services.AddDbContext<TRFLibrary.Models.projectContext>(options => options.UseSqlServer(connection));
+            //services.AddDbContext<TRFLibrary.Models.projectContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Connection2RDS")));
+
             services.AddScoped<IRestaurantRepository, RestaurantRepository>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }

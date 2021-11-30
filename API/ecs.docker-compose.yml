@@ -1,0 +1,18 @@
+version: '2'
+services:
+  webapp:
+    image: 113074577195.dkr.ecr.ca-central-1.amazonaws.com/project-repo
+    cpu_shares: 1023
+    mem_limit: 980MB
+    ports:
+      - "8081:8091"
+    command: bash -c "dotnet API.dll"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://0.0.0.0:8091
+      - AWS_ACCESS_KEY_ID=
+      - AWS_SECRET_ACCESS_KEY=
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://logs.papertrailapp.com:54298"

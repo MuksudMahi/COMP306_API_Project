@@ -74,7 +74,7 @@ namespace API.Services
             
         }
 
-        public async Task<IEnumerable<Food>> GetFoodsForRestaurant(int RestaurantId)
+        public async Task<IEnumerable<Food>> GetFoodsForRestaurant(int? RestaurantId)
         {
             IQueryable<Food> result = _context.Foods.Where(r => r.RestaurantId == RestaurantId);
             return await result.ToListAsync();
